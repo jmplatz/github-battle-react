@@ -8,10 +8,10 @@ const activeStyle = {
 
 }
 
-export default function Nav () {
+export default function Nav ({toggleTheme}) {
   return (
     <ThemeConsumer>
-      {({ theme, toggleTheme }) => (
+      {(theme) => (
         <nav className='row space-between'>
           <ul className='row nav'>
             <li><NavLink exact to='/' className='nav-link' activeStyle={activeStyle}>Popular</NavLink></li>
